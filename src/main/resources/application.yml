@@ -1,0 +1,37 @@
+spring:
+  profiles:
+    active: qa
+
+---
+spring:
+  profiles: dev
+server:
+  port: 1231
+
+default:
+  course:
+    name: Vlad
+    chapterCount: 228
+
+course:
+  name: Spring
+  chapterCount: 123
+  rating: 5
+  visitor: Vladyslav
+
+---
+spring:
+  profiles: qa
+server:
+  port: 9191
+
+default:
+  course:
+    name: Vlad__
+    chapterCount: 2280
+
+course:
+  name: Spring_
+  chapterCount: 123
+  rating: 5
+  visitor: Vladyslav__
